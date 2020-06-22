@@ -13,7 +13,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       // state components
-      content: '# Sample Markdown Heading\n\nEdit or replace this\n-----------\n\n### Another deeper heading\n\n Heres some code, `<div></div>`, between 2 backticks\n\nAnd this is code block:\n\n```\npython s = "Python syntax highlighting"\nprint s\n```\n \n\n> Blockquotes are very handy in email to emulate reply text.\n\nParagraphs are separated by a blank line.\n\nLeave 2 spaces at the end of a line to do a  line break\n\nText attributes *italic*, **bold**,\n`monospace`, ~~strikethrough~~ .\n\nUnordered list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n---\n\n#### There is also [links](https://www.freecodecamp.com)\n\n ![React Logo w/ Text](https://goo.gl/Umyytc)'
+      content: '# Sample Markdown Heading\n\nEdit or replace this\n-----------\n\n### Another deeper heading\n\n Heres some code, `<div></div>`, between 2 backticks\n\nAnd this is code block:\n\n```\npython s = "Python syntax highlighting"\nprint s\n```\n \n\n> Blockquotes are very handy in email to emulate reply text.\n\nParagraphs are separated by a blank line.\n\nLeave 2 spaces at the end of a line to do a  line break\n\nText attributes *italic*, **bold**,\n`monospace`, ~~strikethrough~~ .\n\nUnordered list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n---\n\n#### There are also [links](http://karzua.beget.tech)\n\n ![React Logo w/ Text](https://goo.gl/Umyytc)'
     }
   }
 
