@@ -4,14 +4,16 @@ import './styles.css';
 import Editor from './editor';
 import Preview from './preview';
 import * as serviceWorker from './serviceWorker';
-var marked = require('marked');
+
+
+
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       // state components
-      content: "# React Markdown Previewer     ## This is a sub-heading...   ### And here's some other cool stuff:   Heres some code, `<div></div>`, between 2 backticks."
+      content: '# Sample Markdown Heading\n\nEdit or replace this\n-----------\n\n### Another deeper heading\n\n Heres some code, `<div></div>`, between 2 backticks \n\nParagraphs are separated by a blank line.\n\nLeave 2 spaces at the end of a line to do a  line break\n\nText attributes *italic*, **bold**,\n`monospace`, ~~strikethrough~~ .\n\nUnordered list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n---\n\n#### There is also [links](https://www.freecodecamp.com)\n\n ![React Logo w/ Text](https://goo.gl/Umyytc)'
     }
   }
 
@@ -19,9 +21,6 @@ class Main extends React.Component {
     this.setState({ content: event.target.value });
   }
 
-  handleMarkdown = (content) => {
-    return marked(content);
-  }
 
   render() {
     return (
@@ -36,9 +35,8 @@ class Main extends React.Component {
               />
             </div>
             <div class="col">
-              <Preview 
-              content={this.handleMarkdown(this.state.content)}
-              />
+              
+              <Preview content = {this.state.content} />
             </div>
           </div>
         </div>

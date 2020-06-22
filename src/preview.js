@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles.css';
+import Markdown from './markdown';
+
 
 class Preview extends React.Component {
   constructor(props){
@@ -9,6 +11,9 @@ class Preview extends React.Component {
     }
   }
   render(){
+
+    const content = this.props.content;
+
   return (
       <React.Fragment>
         <label for="preview">Preview</label>
@@ -24,12 +29,13 @@ class Preview extends React.Component {
 </svg>
 </button>
 
-            <div class="jumbotron jumbotron-fluid" id="preview">
-              <div class="container">
+            {/* <div class="jumbotron jumbotron-fluid" id="preview"> */}
+              {/* <div class="container"> */}
+              <Markdown content={content}/>
                 {/* <h1 class="display-4">Fluid jumbotron</h1> */}
-                {this.props.content}
-              </div>
-            </div>
+                {/* {content} */}
+              {/* </div> */}
+            {/* </div> */}
       </React.Fragment>
     );
   }
